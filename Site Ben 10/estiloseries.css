@@ -1,0 +1,157 @@
+body{
+    background-image: url(imagens/fundos/fundo.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-size: cover;
+}
+#site{
+    /*Display Grid*/
+    display: grid;
+    /*Área de cada lugar na grid*/
+    grid-template-areas: 
+    "inicio inicio "
+    "menu_h menu_h "
+    "navegar navegar "
+    "classico AF "
+    "UA Omniverse "
+    ;
+    /*Quanto cada coluna deve ocupar*/
+}
+
+/*Inicio*/
+#inicio{
+    /*Seta a área para o grid*/
+    grid-area: inicio;
+    /*Flex*/
+    display: flex;
+    /*Borda*/
+    border: 1px solid black;
+    /*Separa em colunas*/
+    flex-direction: column;
+    /*Centraliza*/
+    justify-content: center;
+    align-items: center;
+    /*Background*/
+    background-color: whitesmoke;
+}
+
+#menu_h{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: menu_h;
+    /*Seta o display flex para alterar dentro desta div*/
+    display: flex;
+    /*Centraliza itens*/
+    align-items: center ;
+    /*Centraliza itens*/
+    justify-content: center;
+    /*Borda do texto*/  
+    border: 1px solid black;
+}
+.botaoz{
+    /*Seta o display flex para alterações*/
+    display: flex;
+    /*Dá uma distancia para a direita para cada botão*/
+    margin-left: 10px;
+    /*Distancia a esquerda para cada botão*/
+    margin-right: 10px;
+    /*Cor de fundo de cada botão*/
+    background-color: white;
+    /*Borda de cada botão*/
+    border: 1px solid black;
+}
+/*Se o mouse estiver em cima de um botão*/
+.botaoz:hover{
+    /*Cor do fundo muda*/
+    background-color: green;
+    /*Borda muda*/
+    border: 0.5px solid black;
+    /*O espaçamento entre os botões é aumentado*/
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*Navegar*/
+#barradenavegar{
+    /*Seta a área para o GRID*/
+    grid-area: navegar;
+    /*Flex*/
+    display: flex;
+    /*Centralizar*/
+    align-items: center;
+    justify-content: center;
+    /*Borda*/
+    border: 1px solid black;
+    /*Background*/
+    background-color: #058C42;
+}
+
+.botao{
+    /*Seta o display flex para elterações*/
+    display: flex;
+    /*Dá uma distancia para a direita para cada botão*/
+    margin-left: 10%;
+    /*Distancia a esquerda para cada botão*/
+    margin-right: 10%;
+    /*Borda de cada botão*/
+    border: 1px solid black;
+    /*Tamanho de cada "Botão"*/
+    width: 80px;
+    /*Centralizar*/
+    align-items: center;
+    justify-content: center;
+}
+.botao:hover{
+    /*Cor do fundo muda*/
+    background-color: #1ff203;
+    /*Borda muda*/
+    border: 0.5px solid black;
+}
+
+#Classico{
+    /*Seta a área para o GRID*/
+    grid-area: classico;
+    /*Flex*/
+    display: flex;
+    /*Borda*/
+    border: 1px solid black;
+    /*Background*/
+    background-color: whitesmoke;
+}
+
+#Alien_Force{
+    grid-area: AF;
+    display: flex;
+    border: 1px solid black;
+    /*Background*/
+    background-color: whitesmoke;
+}
+
+#Ultimate_Alien{
+    grid-area: UA;
+    display: flex;
+    border: 1px solid black;
+    /*Background*/
+    background-color: whitesmoke;
+}
+
+#Omniverse{
+    grid-area: Omniverse;
+    display: flex;
+    border: 1px solid black;
+    /*Background*/
+    background-color: whitesmoke;
+}
+p{
+    font-size: large;
+}
+h4{
+    font-size: x-large;
+}
+
+img{
+    padding: 10px;
+    size: 100vh ;
+}

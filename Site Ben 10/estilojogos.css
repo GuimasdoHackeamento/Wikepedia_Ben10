@@ -1,0 +1,100 @@
+body{
+    background-color: green;
+}
+#site{
+    /*Display GRID*/
+    display: grid;
+    /*Cria as áreas do GRID*/
+    grid-template-areas: 
+    "inicio inicio "
+    "menu_h menu_h "
+    "navegar navegar "
+    "poe af"
+    "va cd"
+    "om om2";
+}
+#inicio{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: inicio;
+}
+#menu_h{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: menu_h;
+    /*Seta o display flex para alterar dentro desta div*/
+    display: flex;
+    /*Centraliza itens*/
+    align-items: center ;
+    /*Centraliza itens*/
+    justify-content: center;
+    /*Borda do texto*/  
+    border: 1px solid black;
+}
+.botaoz{
+    /*Seta o display flex para alterações*/
+    display: flex;
+    /*Dá uma distancia para a direita para cada botão*/
+    margin-left: 10px;
+    /*Distancia a esquerda para cada botão*/
+    margin-right: 10px;
+    /*Cor de fundo de cada botão*/
+    background-color: white;
+    /*Borda de cada botão*/
+    border: 1px solid black;
+}
+/*Se o mouse estiver em cima de um botão*/
+.botaoz:hover{
+    /*Cor do fundo muda*/
+    background-color: green;
+    /*Borda muda*/
+    border: 0.5px solid black;
+    /*O espaçamento entre os botões é aumentado*/
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#barradenavegar{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: navegar;
+    /*Borda*/
+    border: 1px solid black;
+}
+#poe{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: poe;
+    /*Borda*/
+    border: 1px solid black;
+}
+#af{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: af;
+    /*Borda*/
+    border: 1px solid black;
+}
+#va{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: va;
+    /*Borda*/
+    border: 1px solid black;
+}
+#cd{
+    /*Seta o nome para utilizar na grid*/
+    grid: cd;
+    /*Borda*/
+    border: 1px solid black;
+}
+#om{
+    /*Seta o nome para utilizar na grid*/
+    grid: om;
+    /*Borda*/
+    border: 1px solid black;
+}
+#om2{
+    /*Seta o nome para utilizar na grid*/
+    grid: om2;
+    /*Borda*/
+    border: 1px solid black;
+}
+h5{
+    /*Aumenta o título*/
+    font-size: large;
+}

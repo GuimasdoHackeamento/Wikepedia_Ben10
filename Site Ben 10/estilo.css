@@ -1,0 +1,132 @@
+/*Adiciona fontes novas ao CSS*/
+@font-face {
+    font-family: alien;
+    src: url(fontes/BADABB__.TTF);
+}
+@font-face {
+    font-family: comic;
+    src: url(fontes/Hey\ Comic.otf) format('opentype');
+}
+
+
+/*Corpo do site, onde coloco uma imagem de fundo*/
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0D2818;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Grid principal, onde vou mapear cada lugar so site*/
+#site{
+    /*Cor do fundo da grid*/
+    background-color: #04471C;
+    /*Define a borda do site*/
+    margin: 0px;
+    /*Separa o site um pouco da parte de cima*/
+    padding-top: 5px;
+    /*Seta o display grid*/
+    display: grid;
+    /*Seta quais áreas cada espaço vai usar*/
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "menu_h menu_h menu_h"
+    "tudo tudo tudo"
+    "tudo tudo tudo"
+    "rodape rodape rodape"
+    ;
+    /*Seta qual é o tamanho das colunas*/
+}
+/*Grid aninhada, onde vou alterar dentro da grid 1*/
+#site2{
+    /*Seta o display grid*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "imagem texto";
+}
+/*Coisas da grid 1*/
+/*Alterações no título do site*/
+#titulo{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: titulo;
+    /*Seta o display flex para alterar dentro desta div*/
+    display: flex;
+    /*Cor da fonte*/
+    color: aliceblue;
+    /*Fonte*/
+    font-family: alien;
+    /* Centraliza itens */
+    align-items: center;
+    /* Centraliza itens */
+    justify-content: center;
+    /*Borda do titulo*/
+    border: 1px solid black;
+}
+/*Alterações no menu principal*/
+#menu_h{
+    /*Seta o nome para utilizar na grid*/
+    grid-area: menu_h;
+    /*Seta o display flex para alterar dentro desta div*/
+    display: flex;
+    /*Centraliza itens*/
+    align-items: center ;
+    /*Centraliza itens*/
+    justify-content: center;
+    /*Borda do texto*/  
+    border: 1px solid black;
+}
+/*Botões do menu h*/
+.botao{
+    /*Seta o display flex para elterações*/
+    display: flex;
+    /*Dá uma distancia para a direita para cada botão*/
+    margin-left: 10px;
+    /*Distancia a esquerda para cada botão*/
+    margin-right: 10px;
+    /*Borda de cada botão*/
+    border: 1px solid black;
+    color: aliceblue;
+    transition-duration: 1s;
+}
+/*Se o mouse estiver em cima de um botão*/
+.botao:hover{
+    /*Cor do fundo muda*/
+    background-color: green;
+    /*Borda muda*/
+    border: 0.5px solid black;
+    /*O espaçamento entre os botões é aumentado*/
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*Rodapé do site*/
+#rodape{
+    display: flex;
+    /*Seta o nome pra grid*/
+    grid-area: rodape;
+    /*Borda*/
+    border: 1px solid black;
+    /*Centraliza itens*/
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+/*Para a grid 2*/
+#imagem{
+    display: flex;
+    grid-area: imagem;
+}
+#texto{
+    display: flex;
+    grid-area: texto;
+    align-items: center center;
+    justify-content: center center;
+    background-color: blanchedalmond;
+}
